@@ -28,7 +28,7 @@ $logger = new Logger([
         "Console",
         "File"
     ],
-    "logDir" => __DIR__ . "logs/"
+    "logDir" => "pathToSave/"
 ]);
 
 $client->setLogger($logger);
@@ -44,6 +44,9 @@ $client->setConnect(new CurlConnect());
 ### Change request authorization type
 ```php
 use ApiClient/Signer;
+
+use ApiClient\Authorization\Strategy\BasicAuthorizationStrategy;
+use ApiClient\Authorization\Strategy\JWTAuthorizationStrategy;
 
 $signer = new Signer();
 $signer->setMethod(new BasicAuthorizationStrategy());
