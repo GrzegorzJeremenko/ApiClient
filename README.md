@@ -3,7 +3,7 @@
 
 ## Installation
 ```bash 
-composer require grzegorzjeremenko/api-client
+composer require grzegorzjeremenko/apiclient
 ```
 
 ## Testing
