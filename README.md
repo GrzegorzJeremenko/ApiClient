@@ -21,7 +21,7 @@ $response = $client->sendRequest($request);
 
 ### Change logger
 ```php
-use ApiClient/Logger;
+use ApiClient\Logger;
 
 $logger = new Logger([
     "logTo" => [
@@ -36,14 +36,14 @@ $client->setLogger($logger);
 
 ### Change connection method
 ```php
-use ApiClient/CurlConnect;
+use ApiClient\CurlConnect;
 
 $client->setConnect(new CurlConnect());
 ```
 
 ### Change request authorization type
 ```php
-use ApiClient/Signer;
+use ApiClient\Signer;
 
 use ApiClient\Authorization\Strategy\BasicAuthorizationStrategy;
 use ApiClient\Authorization\Strategy\JWTAuthorizationStrategy;
