@@ -13,7 +13,7 @@ composer test
 
 ## Usage
 ```php
-use ApiClient/ApiClient;
+use ApiClient\ApiClient;
 
 $client = new ApiClient();
 $response = $client->sendRequest($request);
